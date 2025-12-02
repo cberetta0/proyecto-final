@@ -31,9 +31,8 @@ Antes de ejecutar la aplicación, necesitás:
   | `DB_URL`       | URL JDBC de conexión a la base de datos   |
   | `DB_USERNAME`  | Usuario de MySQL                          |
   | `DB_PASSWORD`  | Contraseña del usuario                    |
-  | `DB_NAME`      | (Opcional) Nombre de la base de datos     |
 
-  DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
+   DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
 
 ## 🤝 Endpoints disponibles
 - GET /productos
