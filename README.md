@@ -26,14 +26,16 @@ Antes de ejecutar la aplicación, necesitás:
 1. Tener **MySQL instalado** y corriendo.
 2. Configurar las siguientes variables de entorno:
 
-    Variable	    Descripción
-    DB_URL	      URL de conexión JDBC a la base de datos (abajo)
-    DB_USERNAME	  Usuario de MySQL
-    DB_PASSWORD	  Contraseña del usuario
+  | Variable       | Descripción                              |
+  |----------------|-------------------------------------------|
+  | `DB_URL`       | URL JDBC de conexión a la base de datos   |
+  | `DB_USERNAME`  | Usuario de MySQL                          |
+  | `DB_PASSWORD`  | Contraseña del usuario                    |
+  | `DB_NAME`      | (Opcional) Nombre de la base de datos     |
 
-    DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
+  DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
 
-## Endpoints disponibles
+## 🤝 Endpoints disponibles
 - GET /productos
 - GET /productos/{id}
 - POST /productos
