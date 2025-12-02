@@ -29,7 +29,7 @@ Antes de ejecutar la aplicación, necesitás:
   | Variable       | Descripción                              |
   |----------------|-------------------------------------------|
   | `DB_URL`       | URL JDBC de conexión a la base de datos   |
-  | `DB_USERNAME`  | Usuario de MySQL                          |
+  | `DB_USER`  | Usuario de MySQL                          |
   | `DB_PASSWORD`  | Contraseña del usuario                    |
 
    DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
