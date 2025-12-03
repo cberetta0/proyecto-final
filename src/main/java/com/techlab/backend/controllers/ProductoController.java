@@ -3,7 +3,6 @@ package com.techlab.backend.controllers;
 import com.techlab.backend.models.Producto;
 import com.techlab.backend.services.ProductoService;
 import java.util.List;
-import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -26,8 +26,8 @@ public class ProductoController {
   }
 
   @GetMapping
-  public List<Producto> listarProductos(){
-    return this.service.listar();
+  public List<Producto> listarProductos(@RequestParam(required = false, defaultValue = "") String nombre){
+    return this.service.listar(nombre);
   }
 
   @GetMapping("/{id}")

@@ -19,7 +19,10 @@ public class ProductoService {
     this.repositorio = repositorio;
   }
 
-  public List<Producto> listar(){
+  public List<Producto> listar(String nombre){
+    if(!nombre.isBlank()){
+      return this.repositorio.findByNombreContaining(nombre);
+    }
     return this.repositorio.findAll();
   }
 
