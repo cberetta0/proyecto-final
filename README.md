@@ -35,7 +35,7 @@ Antes de ejecutar la aplicación, necesitás:
    DB_URL=jdbc:mysql://localhost:3306/techlabdb?createDatabaseIfNotExist=true&useSSL=false
 
 ## 🤝 Endpoints disponibles
-- GET /productos
+- GET /productos?nombre=... (Query Param opcional)
 - GET /productos/{id}
 - POST /productos
 - PUT /productos/{id}
